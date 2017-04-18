@@ -362,13 +362,6 @@ WebPage::WebPage(QObject* parent, const QUrl& baseUrl)
     m_callbacks = new WebpageCallbacks(this);
     m_customWebPage = new CustomPage(this);
     Config* phantomCfg = Phantom::instance()->config();
-
-    // To grant universal access to a web page
-    // attribute "WebSecurityEnabled" must be applied during the initializing
-    // security context for Document instance. Setting up it later will not cause any effect
-    // see <qt\src\3rdparty\webkit\Source\WebCore\dom\Document.cpp:4468>
-    QWebSettings* settings = m_customWebPage->settings();
-
     m_mainFrame = m_customWebPage->mainFrame();
     m_currentFrame = m_mainFrame;
     m_mainFrame->setHtml(BLANK_HTML, baseUrl);
