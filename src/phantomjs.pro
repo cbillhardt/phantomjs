@@ -23,7 +23,7 @@ HEADERS += \
     phantom.h \
     callback.h \
     webpage.h \
-    webserver.h \
+#    webserver.h \
     consts.h \
     utils.h \
     networkaccessmanager.h \
@@ -41,7 +41,7 @@ HEADERS += \
 SOURCES += phantom.cpp \
     callback.cpp \
     webpage.cpp \
-    webserver.cpp \
+#    webserver.cpp \
     main.cpp \
     utils.cpp \
     networkaccessmanager.cpp \
@@ -66,7 +66,7 @@ OTHER_FILES += \
     modules/cookiejar.js \
     repl.js
 
-include(mongoose/mongoose.pri)
+# include(mongoose/mongoose.pri)
 include(linenoise/linenoise.pri)
 include(qcommandline/qcommandline.pri)
 

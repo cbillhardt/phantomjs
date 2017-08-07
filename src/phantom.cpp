@@ -44,7 +44,7 @@
 #include "terminal.h"
 #include "utils.h"
 #include "webpage.h"
-#include "webserver.h"
+//#include "webserver.h"
 #include "repl.h"
 #include "system.h"
 #include "callback.h"
@@ -323,12 +323,12 @@ QObject* Phantom::createWebPage()
     return page;
 }
 
-QObject* Phantom::createWebServer()
-{
-    WebServer* server = new WebServer(this);
-    m_servers.append(server);
-    return server;
-}
+//QObject* Phantom::createWebServer()
+//{
+//    WebServer* server = new WebServer(this);
+//    m_servers.append(server);
+//    return server;
+//}
 
 QObject* Phantom::createFilesystem()
 {

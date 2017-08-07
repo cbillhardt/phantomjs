@@ -107,7 +107,7 @@ public:
 public slots:
     QObject* createCookieJar(const QString& filePath);
     QObject* createWebPage();
-    QObject* createWebServer();
+//    QObject* createWebServer();
     QObject* createFilesystem();
     QObject* createSystem();
     QObject* createCallback();
